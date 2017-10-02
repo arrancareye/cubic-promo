@@ -149,8 +149,12 @@ body{
     /* z-index: -1; */
     background: white;
     padding: 20px;
+    text-align: left;
 }
 
+.textarea > img{
+    width: 100%;
+}
 
 .boxed{
     -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -184,4 +188,83 @@ body{
 
 .contacts{
     visibility: hidden;
+}
+
+
+/* Animations */
+/* @-webkit-keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 0px 50px;
+    }
+  }
+  @keyframes bg-scrolling-reverse {
+    100% {
+      background-position: 0px 50px;
+    }
+  }
+  @-webkit-keyframes bg-scrolling {
+    0% {
+      background-position: 0px 50px;
+    }
+  }
+  @keyframes bg-scrolling {
+    0% {
+      background-position: 0px 50px;
+    }
+  } */
+
+  /* Main styles */
+  /* body {
+    background:  url(images/icon/testimonial.png) repeat;
+    background-size: cover;    
+     -webkit-animation: bg-scrolling-reverse 15s infinite;
+    animation: bg-scrolling-reverse 15s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+  } */
+
+
+  @keyframes animatedBackground {
+    0 {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -600px 600px; /* анимируем свойство background-position */
+    }
+}
+/* Mozilla Firefox 5.0+ */
+@-moz-keyframes animatedBackground {
+    0 {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -600px 600px;
+    }
+}
+/* Safari 4.0+, Chrome 4.0+ */
+@-webkit-keyframes animatedBackground {
+    0 {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -600px 600px;
+    }
+}
+/* Opera 12.0+ */
+@-o-keyframes animatedBackground {
+    0 {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -600px 600px;
+    }
+}
+/* не нужно использовать префикс -ms, так как свойства keyframes и animation поддерживаются с версии IE10 без префикса */
+#fon{
+	background-image: url(images/icon/testimonial.jpg);
+	animation: animatedBackground 60s linear infinite;
+	-moz-animation: animatedBackground 60s linear infinite;
+	-webkit-animation: animatedBackground 60s linear infinite;
+ 	-o-animation: animatedBackground 60s linear infinite;
+	/* так же, как и с @keyframes, префикс -ms тут ни к чему */
 }
