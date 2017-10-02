@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/swiper.css">
+    <script src="dist/js/swiper.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|PT+Sans+Narrow|Roboto+Mono" rel="stylesheet">
+</head>
+<body>
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+                <div class="slide-1-container">
+                    <div class="left-side">
+                        <img src="images/slides/cart.png" alt="">
+                    </div>
+                    <div class="right-side">
+                            <img src="images/slides/logo.png" alt="" class="logo">
+                        <div class="inform">
+                            <p class="support clr1">Справочная служба</p>
+                            <p class="email clr2"><a href="mailto:spravka@carefood.kz" class="clr2">spravka@carefood.kz</a></p>
+                            <p class="phone clr2"><a href="tel:+7 727 228 14 96" class="clr2">+7 727 228 14 96</a></p>
+                        </div>
+                        <button>
+                            <a class="gamecond nextbtn" >Условия розыгрыша</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-2"></div>
+        </div>
+    </div>
+    <script>
+        let nxt = document.querySelector('.nextbtn');
+        let prv = document.querySelector('.prevbtn');
+
+        let mySwiper = new Swiper ('.swiper-container', {
+            pagination: '.swiper-pagination',
+            direction: 'vertical',
+            nextButton: nxt,
+            prevButton: prv,
+            loop: false,
+            effect: 'cube',
+            grabCursor: true,
+            speed: 1000,
+            cube: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94
+            }
+        }) 
+    </script>
+</body>
+</html>
