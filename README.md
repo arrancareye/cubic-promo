@@ -1,2 +1,0 @@
-# cubic-promo
-cubic promo
