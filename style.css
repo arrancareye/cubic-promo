@@ -288,6 +288,7 @@ body{
         text-align: center;
     }
     .mobile-mount-top{
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -312,6 +313,7 @@ body{
         overflow: auto !important;
         padding: 20px;
         width: 100%;
+        text-align: left;
     }
     .textbottom img{
         width: 100%;
@@ -319,7 +321,7 @@ body{
     .condbutton {
         color: white;
         font-family: 'PT Sans Narrow', sans-serif;     
-        font-size: 24px;
+        font-size: 32px;
         background: #ffa200;
         width: 100%;
         height: 90px;
@@ -329,8 +331,41 @@ body{
         justify-content: center;
         -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        margin-top: 25px;
     }
     body{
         overflow: auto !important;
     }
+    .cartdiv{
+        width: 90%;
+    }
+    .cartdiv > img {
+        width: 80%;
+    }
+    .mobilecontacts{
+        visibility: visible !important;
+    }
+    .contacts{
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contacts div{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: #FF8100;
+    }
+    .contacts div i {
+        display: inline;
+        margin-right: 5px;
+        font-size: 24px;
+    }
+    .contacts div a{
+        display: inline;
+        font-family: 'PT Sans Narrow', sans-serif;  
+        font-size: 24px;
+        text-decoration: none;
+        color: #FF8100;
+    }
+    
 }
