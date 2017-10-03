@@ -9,10 +9,10 @@
 
         window.addEventListener('click', (e)=>{
             if(fst.classList.contains('active')) {
-                btside.style.opacity = 0;
+                // btside.style.opacity = 0;
                 console.log('clicked overlay');
             } else {
-                fst.style.opacity = 1;
+                // fst.style.opacity = 1;
             }
         });
         

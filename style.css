@@ -12,7 +12,10 @@ body{
     font-family: 'PT Sans Narrow', sans-serif;    
     overflow-y: hidden;    
     height: 100%;
+    font-size: 12px;
 }
+
+
 
 .swiper-container {
     width: 100%;
@@ -164,26 +167,6 @@ body{
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.conds{
-    font-size: 86px;
-    font-weight: bold;
-    /* font-family: 'Open Sans', sans-serif;    */
-    font-family: 'Yanone Kaffeesatz', sans-serif;    
-    line-height: 0.8; 
-}
-
-.game{
-    font-family: 'Yanone Kaffeesatz', sans-serif;  
-    font-size: 56px;     
-}
-
-.kvz{
-    font-size: 44px; 
-    font-weight: 400;
-    /* font-family: 'Roboto Mono', monospace; */
-    font-family: Helvetica;
-    font-weight: lighter;
-}
 
 .bottom__left{
     color: white;
@@ -195,7 +178,7 @@ body{
 
 
 /* Animations */
-/* @-webkit-keyframes bg-scrolling-reverse {
+@-webkit-keyframes bg-scrolling-reverse {
     100% {
       background-position: 0px 50px;
     }
@@ -214,17 +197,16 @@ body{
     0% {
       background-position: 0px 50px;
     }
-  } */
+  } 
 
-  /* Main styles */
-  /* body {
+ body {
     background:  url(images/icon/testimonial.png) repeat;
     background-size: cover;    
      -webkit-animation: bg-scrolling-reverse 15s infinite;
     animation: bg-scrolling-reverse 15s infinite;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
-  } */
+  } 
 
 
   @keyframes animatedBackground {
@@ -262,21 +244,23 @@ body{
         background-position: -600px 600px;
     }
 }
+
 /* не нужно использовать префикс -ms, так как свойства keyframes и animation поддерживаются с версии IE10 без префикса */
-/* #fon{
+
+#fon{
 	background-image: url(images/icon/testimonial.jpg);
 	animation: animatedBackground 60s linear infinite;
 	-moz-animation: animatedBackground 60s linear infinite;
 	-webkit-animation: animatedBackground 60s linear infinite;
  	-o-animation: animatedBackground 60s linear infinite;
-} */
+}
 
 .mobile-mount{
     display: none;
 }
 
 .bottom__right{
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 @media (max-width: 480px) {
@@ -336,6 +320,7 @@ body{
     body{
         overflow: auto !important;
     }
+
     .cartdiv{
         width: 90%;
     }
@@ -369,3 +354,82 @@ body{
     }
     
 }
+
+.plasks{
+    width: 100%;
+    position: relative;
+    top: -400px;
+
+}
+
+.plasks > img {
+    width: 100%;
+}
+
+.conds{
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif;    
+    line-height: 0.8;
+    font-size: 5.5em;
+}
+
+.game{
+    font-size: 3.8em;
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
+
+}
+
+.kvz{
+    font-size: 3.3em;
+    font-family: Helvetica;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.textarea {
+    font-size: 1.5em;
+}
+
+.prevbtn {
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    width: 20%;
+    outline: none;
+    height: 5em;
+    font-size: 1.5em;
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+    background: url(images/slides/img10.png) no-repeat center center;
+    background-size: contain;
+    border: none;
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;  
+
+}
+
+@media (min-width: 480px) and (max-width: 620px) {
+    body {
+        font-size: 6px;
+    }
+}
+
+@media (min-width: 620px) and (max-width: 890px) {
+    body{
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 840px) {
+
+}
+
+@media (min-width: 840px) and (max-width: 960px) {
+
+}
+
+@media (min-width: 960px) and (max-width: 1380px) {
+
+}
+
